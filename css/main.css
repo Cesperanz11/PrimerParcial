@@ -227,6 +227,11 @@ p{
     margin-bottom: 3em;
 }
 
+#message{
+    height: 250px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
@@ -461,12 +466,12 @@ footer .social-links {
     }
     
     /*Posicionamiento de barras de informacion*/
-    .contact-form {
+ /*   .contact-form {
         padding-left: 5em;
         padding-right: 0em;
     }
     /*Barras para escribir*/
-    .contact-form input, .contact-form textarea{
+  /*  .contact-form input, .contact-form textarea{
         height: 55px;
         border-radius: 0px 1.4em;
     }
