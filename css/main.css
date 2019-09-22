@@ -303,7 +303,7 @@ footer .social-links {
         margin: 1.5em;
     }
     /*Hover*/
-    .menu ul li A:hover{
+    .menu li a:hover{
         color: red;
     }
     /*Formato del menu*/
@@ -364,7 +364,7 @@ footer .social-links {
         display: none;
     }
      /*Hover*/
-    .menu ul li A:hover{
+    .menu li a:hover{
         color: red;
     }
     /*Formato del menu*/
@@ -653,7 +653,7 @@ footer .social-links {
     display: none;
 }
  /*Hover*/
-.menu a:hover{
+.menu li a:hover{
     color: red;
 }
 /*Formato del menu*/
