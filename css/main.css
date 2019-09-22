@@ -228,7 +228,7 @@ p{
 }
 
 #message{
-    height: 250px;
+    height: 180px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -452,11 +452,13 @@ footer .social-links {
     .bio-info p{
         font-size: 20px;
         line-height: 28px;
+        padding left: 0;
+        padding-rigth: 0;
     }
     .bio-info{
         flex: 1 0 50%;
     }
-
+   
     .contact{
         display: flex;
         flex-direction: column;
@@ -465,23 +467,21 @@ footer .social-links {
         flex: 1 0 50%;
     }
     
-    /*Posicionamiento de barras de informacion*/
- /*   .contact-form {
-        padding-left: 5em;
-        padding-right: 0em;
-    }
-    /*Barras para escribir*/
-  /*  .contact-form input, .contact-form textarea{
-        height: 55px;
-        border-radius: 0px 1.4em;
-    }
-    
-    .contact-form input[type=submit] {
-        width: 210px;
-        height: 60px;
-        font-size: 1rem;
-    }
-    
+   .contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+   }
+
+   .contact-form input[type=submit]{
+       background-color: #F74442;
+       font-weight: 400;
+       color: white;
+       font-size: 1rem;
+       margin-bottom: 3em;
+       width: 300px;
+   }
+
     /*tamaño del espacio para texto "message"*/
     #message{
         height: 250px;
