@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/*Separar los dos objetos del header*/
 .header {
     display: flex;
     justify-content: space-between
@@ -26,22 +26,22 @@ body {
 .src-only {
     display: none;
 }
-
+/*Ocultando objetos no deseados en la vista de telefono*/
 .hide-mobile {
     display: none;
 }
-
+/*Modificando los parrafos*/
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
-
+/*Modificando el logo*/
 .logo {
     width: 90px;
     margin: 1em;
 }
-
+/*Editando las barritas del menu*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -55,23 +55,25 @@ p{
     align-items: flex-start;
 
 }
+/*Heredando caracteristicas de options*/
 .options i:last-child {
     font-size: 1.6rem;
 }
 
 /* Big area */
+/*Alterando imagen*/
 .big-hero img {
     width: 130px;
     margin-top: 1em;
 }
-
+/*Alterando los h2*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1.5em ;
 }
-
+/*Modificando los p*/
 .big-hero p {
     font-size: 0.9em;;
     color: #D7DEE6;
@@ -79,6 +81,7 @@ p{
 }
 
 /* Social links*/
+/*Cambiando posicion de los iconos de redes sociales*/
 .social-links{
     list-style: none;
     padding: 0;
@@ -89,7 +92,7 @@ p{
     justify-content: center
 
 }
-
+/*Disenho de logos*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
@@ -98,26 +101,28 @@ p{
 }
 
 /*Green Area*/
+/*Color de background*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*Aplicando tamanho al lugar de publicaciones*/
 .post {
     padding: 1em 4em 1em 4em;
     margin-bottom: -2px;
 }
+/*Alterando h2*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 0.8em;
 }
-
+/*Alterando lista*/
 .post ul {
     list-style: none;
 }
-
+/*Alterando cada cosa de la lista*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
@@ -156,11 +161,11 @@ p{
 }
 
 /* About */
-
+/*Tamanho del container*/
 .about{
     margin-top: 2em;
 }
-
+/*Alterando h2*/
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -168,11 +173,11 @@ p{
     margin: 2em;
     margin-top: 2em;
 }
-
+/*Modificando imagen*/
 .bio-info img{
    width: 160px;
 }
-
+/*Modificando p*/
 .bio-info p{
     font-size: 14px;
     padding: 2.5em 4em 2em 4em;
@@ -180,24 +185,24 @@ p{
     line-height: 25px;
     letter-spacing: 2px;
 }
-
+/*Ajustes del contact*/
 .contact {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
 }
-
+/*Dandole margen al contact*/
 .contact * + * {
     margin-top: 1.5em;
 }
-
+/*Dandole ajustes al formulario*/
 .contact-form {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
 }
-
+/*Areas de escribir*/
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -218,7 +223,7 @@ p{
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
-
+/*Modificando el boton de enviar*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -226,7 +231,7 @@ p{
     font-size: 1rem;
     margin-bottom: 3em;
 }
-
+/*Alterando tamanho de message*/
 #message{
     height: 180px;
     font-family: 'Montserrat', sans-serif;
@@ -235,18 +240,18 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/*Tamanho del footer*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
+/*redes sociales del footer*/
 footer .social-links {
     margin: 0;
     margin-bottom: -2em;
     padding-top: 0;
 }
-
+/*Ajustes del menu*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -262,12 +267,13 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+/*Cada seccion del menu*/
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
-
+/*Cada palabra del menu*/
 .menu li a {
     color: white;
     text-decoration: none;
@@ -276,14 +282,14 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  
+  /*listado del post*/
     .post ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    /*cada seccion del post*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -291,20 +297,40 @@ footer .social-links {
         flex: 1 0 300px;
     }
 
-
+ /*tamanho del logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
-
+    /*Hover*/
+    .menu ul li A:hover{
+        color: red;
+    }
+    /*Formato del menu*/
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+    }
+     /*Flechita*/
+     .fa, .fas{
+        font-weight: 900;
+        font-size: 60px;
+        margin-bottom: 1em;
+        color: #0AC693;
+    }
+/*Formato de mostrar las lineas*/
     .show-desktop {
         display: block;
     }
-
+    /*Quitar cosas que no se quieren ver en desktop*/
     .hide-desktop {
         display: none;
     }
-
+    /*Dandole forma al menu*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -321,14 +347,43 @@ footer .social-links {
 
 } 
 
-@media only screen and (min-width: 1024px)and (max-width: 1443px) {
+@media only screen and (min-width: 1024px)and (max-width: 1439px) {
 
     /*Div del Logo*/
+    /*Tamanho del logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
+     /*Formato del menu*/
+     .show-desktop {
+        display: block;
+    }
+     /*Quitar cosas inservibles en desktop*/
+    .hide-desktop{
+        display: none;
+    }
+     /*Hover*/
+    .menu ul li A:hover{
+        color: red;
+    }
+    /*Formato del menu*/
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+    }
 
+    /*Flechita*/
+    .fa, .fas{
+        font-weight: 900;
+        font-size: 80px;
+        margin-bottom: 1em;
+        color: #0AC693;
+    }
     /*Big Hero*/
     .big-hero img{
         width: 200px;
@@ -337,6 +392,7 @@ footer .social-links {
     }
 
     /*Green Area*/
+    /*Haciendo los articulos dinamicos*/
     .post ul{
         list-style: none;
         display: flex;
@@ -352,12 +408,13 @@ footer .social-links {
     }
 
      /*About Me*/
+    /*Haciendo el contenedor dinamico*/
     .about>.container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    /*Poniendo a Acerca De arriba de info*/
     .about h2{
         text-transform: uppercase;
         font-weight: 700;
@@ -375,10 +432,10 @@ footer .social-links {
         font-size: 20px;
         line-height: 28px;
     }
+    /*Ubicando la info*/
     .bio-info{
         flex: 1 0 50%;
     }
-   
     .contact{
         display: flex;
         flex-direction: column;
@@ -386,13 +443,13 @@ footer .social-links {
         padding: 0px 1em;
         flex: 1 0 50%;
     }
-    
+    /*Ubicando el formulario*/
    .contact-form{
     display: flex;
     flex-direction: column;
     padding: 0;
    }
-
+   /*Tamanho de boton enviar*/
    .contact-form input[type=submit]{
        background-color: #F74442;
        font-weight: 400;
@@ -414,7 +471,7 @@ footer .social-links {
 }
 
 @media only screen and (min-width: 1440px) {
-
+/*Modificando el container*/
     .container {
         width: 80%;
         margin: 0 auto;
@@ -425,19 +482,19 @@ footer .social-links {
         width: 200px;
         margin: 1.5em;
     }
-
+   /*Formato del menu*/
     .show-desktop {
         display: block;
     }
-
+     /*Quitar cosas inservibles en desktop*/
     .hide-desktop{
         display: none;
     }
-
-    .menu ul li A:hover{
+     /*Hover*/
+    .menu a:hover{
         color: red;
     }
-
+    /*Formato del menu*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -449,12 +506,13 @@ footer .social-links {
     }
 
     /*Big Hero*/
+    /*Imagen*/
     .big-hero img{
         width: 275px;
         margin-top: 1em;
         margin-bottom: -1em;
     }
-
+    /*Flechita*/
     .fa, .fas{
         font-weight: 900;
         font-size: 100px;
@@ -473,12 +531,13 @@ footer .social-links {
     }
 
     /*Green Area*/
+    /*Ubicando los articulos a la par*/
     .post ul{
         list-style: none;
         display: flex;
         justify-content: space-evenly;
     }
-
+    /*Poniendo los articulos con buen margen*/
     .post ul li{
         min-height: 350px;
         max-height: 3500px;
@@ -513,12 +572,13 @@ footer .social-links {
     }
 
     /*About Me*/
+    /*Haciendo el container dinamico*/
     .about>.container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    /*Ubicando el Acerca De arriba de info*/
     .about h2{
         text-transform: uppercase;
         font-weight: 700;
@@ -537,10 +597,11 @@ footer .social-links {
         line-height: 28px;
         padding-left: 0em;
     }
+    /*Ubicando la info*/
     .bio-info{
         flex: 1 0 50%;
     }
-   
+   /*Ubicando el formulario*/
     .contact{
         display: flex;
         flex-direction: column;
@@ -548,13 +609,13 @@ footer .social-links {
         padding: 0px 1em;
         flex: 1 0 50%;
     }
-    
+    /*Alterando tamanho formulario*/
    .contact-form{
     display: flex;
     flex-direction: column;
     padding: 0;
    }
-
+   /*Cambiando tamanho del boton enviar*/
    .contact-form input[type=submit]{
        background-color: #F74442;
        font-weight: 400;
