@@ -470,7 +470,7 @@ footer .social-links {
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width: 1927px) {
 /*Modificando el container*/
     .container {
         width: 80%;
@@ -632,3 +632,169 @@ footer .social-links {
     }
     
 }
+@media only screen and (min-width: 1928px) {
+/*Modificando el container*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1928px;
+}
+/*Container de Logo*/
+.logo {
+    width: 250px;
+    margin: 1.5em;
+}
+/*Formato del menu*/
+.show-desktop {
+    display: block;
+}
+ /*Quitar cosas inservibles en desktop*/
+.hide-desktop{
+    display: none;
+}
+ /*Hover*/
+.menu a:hover{
+    color: red;
+}
+/*Formato del menu*/
+.menu {
+    background-color: #112935; 
+    position: static;
+    z-index: 20;
+    width: auto;
+    height:auto;
+    display: flex;
+    margin-right: -6em;
+}
+
+/*Big Hero*/
+/*Imagen*/
+.big-hero img{
+    width: 300px;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+/*Flechita*/
+.fa, .fas{
+    font-weight: 900;
+    font-size: 130px;
+    margin-bottom: 1em;
+    color: #0AC693;
+}
+
+.social-links{
+    list-style: none;
+    padding: 0;
+    margin-top: -4em;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Green Area*/
+/*Alterando paddings*/
+.post{
+    padding: 1em;
+}
+/*Ubicando los articulos a la par*/
+.post ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Poniendo los articulos con buen margen*/
+.post ul li{
+    min-height: 350px;
+    max-height: 3500px;
+    margin: 1rem 2rem;
+    flex: 1 0 300px;
+}
+
+.post ul li article{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 3em;
+    height: 500px;
+    width: 375px;
+}
+
+.post article img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post article h3{
+    color: #0D5061;
+    margin-top: 0.5em;
+    padding: 0em 1rem;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*About Me*/
+/*Haciendo el container dinamico*/
+.about>.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Ubicando el Acerca De arriba de info*/
+.about h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 2em;
+    margin-top: 0em;
+    flex: 0 1 100%;
+}
+
+.bio-info img{
+    width: 275px;
+}
+
+.bio-info p{
+    font-size: 25px;
+    line-height: 28px;
+    padding-left: 0em;
+}
+/*Ubicando la info*/
+.bio-info{
+    flex: 1 0 50%;
+}
+/*Ubicando el formulario*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 1em;
+    flex: 1 0 50%;
+}
+/*Alterando tamanho formulario*/
+.contact-form{
+display: flex;
+flex-direction: column;
+padding: 0;
+}
+/*Cambiando tamanho del boton enviar*/
+.contact-form input[type=submit]{
+   background-color: #F74442;
+   font-weight: 400;
+   color: white;
+   font-size: 1rem;
+   margin-bottom: 3em;
+   width: 300px;
+}
+
+/*tamaño del espacio para texto "message"*/
+#message{
+    height: 250px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    }
