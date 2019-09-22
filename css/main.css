@@ -270,7 +270,7 @@ footer .social-links {
 }
 
 /* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   
     .post ul {
         list-style: none;
