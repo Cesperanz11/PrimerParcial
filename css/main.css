@@ -323,6 +323,34 @@ footer .social-links {
 
 @media only screen and (min-width: 1024px)and (max-width: 1443px) {
 
+    /*Div del Logo*/
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    /*Big Hero*/
+    .big-hero img{
+        width: 200px;
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
+
+    /*Green Area*/
+    .post ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .post ul li{
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+    }
+
      /*About Me*/
     .about>.container{
         display: flex;
@@ -346,8 +374,6 @@ footer .social-links {
     .bio-info p{
         font-size: 20px;
         line-height: 28px;
-        padding-left: 0em;
-        padding-right: 0em;
     }
     .bio-info{
         flex: 1 0 50%;
@@ -389,7 +415,6 @@ footer .social-links {
 
 @media only screen and (min-width: 1440px) {
 
-    /*TODO: FALTA CSS */
     .container {
         width: 80%;
         margin: 0 auto;
@@ -511,7 +536,6 @@ footer .social-links {
         font-size: 20px;
         line-height: 28px;
         padding-left: 0em;
-        padding-right: 0em;
     }
     .bio-info{
         flex: 1 0 50%;
