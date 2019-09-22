@@ -439,4 +439,48 @@ footer .social-links {
         margin-top: 0em;
         flex: 0 1 100%;
     }
+
+    .bio-info img{
+        width: 250px;
+    }
+
+    .bio-info p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .bio-info{
+        flex: 1 0 50%;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
+        flex: 1 0 50%;
+    }
+    
+    /*Posicionamiento de barras de informacion*/
+    .contact-form {
+        padding-left: 5em;
+        padding-right: 0em;
+    }
+    /*Barras para escribir*/
+    .contact-form input, .contact-form textarea{
+        height: 55px;
+        border-radius: 0px 1.4em;
+    }
+    
+    .contact-form input[type=submit] {
+        width: 210px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    
+    /*tamaño del espacio para texto "message"*/
+    #message{
+        height: 250px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
 }
