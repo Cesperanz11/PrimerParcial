@@ -318,12 +318,70 @@ footer .social-links {
 
 
 
-    /*TODO: FALTA CSS */
+
 } 
 
 @media only screen and (min-width: 1024px)and (max-width: 1443px) {
 
-       /*TODO: FALTA CSS */
+     /*About Me*/
+    .about>.container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about h2{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin: 2em;
+        margin-top: 0em;
+        flex: 0 1 100%;
+    }
+
+    .bio-info img{
+        width: 250px;
+    }
+
+    .bio-info p{
+        font-size: 20px;
+        line-height: 28px;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .bio-info{
+        flex: 1 0 50%;
+    }
+   
+    .contact{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
+        flex: 1 0 50%;
+    }
+    
+   .contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+   }
+
+   .contact-form input[type=submit]{
+       background-color: #F74442;
+       font-weight: 400;
+       color: white;
+       font-size: 1rem;
+       margin-bottom: 3em;
+       width: 300px;
+   }
+
+    /*tamaño del espacio para texto "message"*/
+    #message{
+        height: 250px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
 
 
 
@@ -351,7 +409,7 @@ footer .social-links {
         display: none;
     }
 
-    .menu ul li a:hover{
+    .menu ul li A:hover{
         color: red;
     }
 
@@ -452,8 +510,8 @@ footer .social-links {
     .bio-info p{
         font-size: 20px;
         line-height: 28px;
-        padding left: 0;
-        padding-rigth: 0;
+        padding-left: 0em;
+        padding-right: 0em;
     }
     .bio-info{
         flex: 1 0 50%;
