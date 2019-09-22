@@ -270,7 +270,7 @@ footer .social-links {
 }
 
 /* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   
     .post ul {
         list-style: none;
@@ -316,7 +316,7 @@ footer .social-links {
     /*TODO: FALTA CSS */
 } 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)and (max-width: 1443px) {
 
        /*TODO: FALTA CSS */
 
@@ -332,7 +332,59 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+    /*Container de Logo*/
+    .logo {
+        width: 200px;
+        margin: 1.5em;
+    }
 
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        color: red;
+    }
+
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-right: -5em;
+    }
+
+    /*Big Hero*/
+    .big-hero img{
+        width: 275px;
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
+
+    .fa, .fas{
+        font-weight: 900;
+        font-size: 100px;
+        margin-bottom: 1em;
+        color: #0AC693;
+    }
+
+    .social-links{
+        list-style: none;
+        padding: 0;
+        margin-top: -4em;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*Green Area*/
     .post ul{
         list-style: none;
         display: flex;
@@ -370,5 +422,21 @@ footer .social-links {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    /*About Me*/
+    .about>.container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about h2{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin: 2em;
+        margin-top: 0em;
+        flex: 0 1 100%;
     }
 }
